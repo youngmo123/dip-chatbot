@@ -1,7 +1,10 @@
 import streamlit as st
 import os
 
-st.title("API 설정")
+st.title("환영합니다🤗")
+st.markdown("@author: [youngmo](https:github.com/youngmo123)")
+st.markdown("[이메일](mailto:youngmo123@hanmail.net)")
+
 
 st.markdown(
     """
