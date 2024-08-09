@@ -20,7 +20,7 @@ api_key = st.text_input("OPENAI API 키 입력(ChatGPT)", type="password")
 st.markdown(
     """
 Tavily API 키 발급 방법은 아래 링크를 참고해 주세요! (검색용)
-* [발급방법](https://wikidocs.net/233342)
+* [발급방법](https://app.tavily.com/home)
 """
 )
 
