@@ -69,16 +69,11 @@ if question:
     summary_chain = SummaryChain(model_name=selected_model).create()
     blog_chain = BlogChain(model_name=selected_model).create()
     english_chain = EnglishConversationChain(model_name=selected_model).create()
-
-    with tab1.chat_message("user"):
-        st.write(question)
-
-    with tab2.chat_message("user"):
-        st.write(question)
-
-    with tab3.chat_message("user"):
-        st.write(question)
-
+    
+    for tab in [tab1, tab2, tab3]:
+        with tab.chat_message("user"):
+            st.write(question)
+    
     with tab1.chat_message("ai"):
         tab1_answer = st.empty()
         answer1 = generate_answer(summary_chain, question, tab1_answer)
