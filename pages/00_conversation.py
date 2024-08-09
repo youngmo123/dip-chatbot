@@ -3,7 +3,7 @@ from conversation_chain import EnglishConversationChain, SummaryChain, BlogChain
 
 
 # 사이트의 제목 입력
-st.title("나만의 챗GPT")
+st.title("우리모두의 챗GPT")
 
 
 with st.sidebar:
